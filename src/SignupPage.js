@@ -11,7 +11,7 @@ const SignupPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://python-task3-production.up.railway.app/api/signup/', { name, password });
+      await axios.post('https://python-task3-production.up.railway.app/api/register', { name, password });
       navigate('/login');
     } catch (err) {
       setError('Error signing up');
