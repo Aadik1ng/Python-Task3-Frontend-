@@ -14,10 +14,12 @@ const App = () => {
         <h1>Face Recognition Attendance System</h1>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/recognize" element={<RecognizePage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/generate-token" element={<GenerateTokenPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/recognize" element={<RecognizePage />} />
+          
+          
           <Route path="/attendance/download-csv" element={<GetCSVPage />} />
         </Routes>
       </div>
