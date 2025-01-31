@@ -7,18 +7,20 @@ const HomePage = () => {
       <h1>Welcome to the Face Recognition Attendance System</h1>
       <nav>
         <ul>
+        <li>
+            <Link to="/signup">Signup</Link>
+          </li>
+          <li>
+            <Link to="/generate-token">Generate Token</Link>
+          </li>
           <li>
             <Link to="/register">Register</Link>
           </li>
           <li>
             <Link to="/recognize">Recognize Face</Link>
           </li>
-          <li>
-            <Link to="/signup">Signup</Link>
-          </li>
-          <li>
-            <Link to="/generate-token">Generate Token</Link>
-          </li>
+          
+         
           <li>
             <Link to="/attendance/download-csv">Download CSV</Link>
           </li>
