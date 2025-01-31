@@ -11,7 +11,11 @@ const GenerateTokenPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://python-task3-production.up.railway.app/api/token/', { name, password });
+      const response = await axios.post(
+        'https://python-task3-production.up.railway.app/api/token',
+        { name, password },
+        { headers: { 'Content-Type': 'application/json' } } // Ensure proper headers
+      );
       setToken(response.data.access_token);
     } catch (err) {
       setError('Error generating token');

@@ -12,7 +12,7 @@ const SignupPage = () => {
     e.preventDefault();
     try {
       await axios.post('https://python-task3-production.up.railway.app/api/register', { name, password });
-      navigate('/login');
+      navigate('/token');
     } catch (err) {
       setError('Error signing up');
     }
